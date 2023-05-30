@@ -21,6 +21,9 @@ Using a Batch Estimate of $q(z)$ for Estimating TC, we have also tried using a b
 $$\mathrm{KL}(p_{\phi}(z) || \prod_{j}{p_{\phi}}(z_{j})) = E_{q(z)} \left[ \log \frac{p_{\phi}(z)}{\prod_j p_{\phi}(z_j)} \right]\\ \approx E_{q(z)} \left[ \log \frac{\hat{p}_{\phi}(z)}{\prod_j \hat{p}_{\phi}(z_j)} \right]\\
 \approx E_{q(z)} \left[ \log \frac{D(z)}{1-D(z)} \right]$$
 
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
 
 $$\mathrm{KL}(p_{\phi}(z) || \prod_{j}{p_{\phi}}(z_{j})) = E_{q(z)} \left[ \log \frac{p_{\phi}(z)}{\prod_j p_{\phi}(z_j)} \right]\\
 \approx E_{q(z)} \left[ \log \frac{\hat{p}_{\phi}(z)}{\prod_j \hat{p}_{\phi}(z_j)} \right]\\
