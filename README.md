@@ -1,7 +1,9 @@
 # TAB-VAE: Temporal Attention Bottleneck for VAE is informative? 
 
 ICML 2023 Workshop on DeployGenerativeModel: Temporal Attention Bottleneck for VAE is informative? 
+
 The use of generative models in energy disaggregation has attracted attention to address the challenge of source separation. This approach holds promise for promoting energy conservation by enabling homeowners to obtain detailed information on their energy consumption solely through the analysis of aggregated load curves. Nevertheless, the model's ability to generalize and its interpretability remain two major challenges. To tackle these challenges, we deploy a generative model called TAB-VAE (Temporal Attention Bottleneck for Variational Autoencoder), based on hierarchical architecture, addresses signature variability, and provides a robust, interpretable separation through the design of its informative representation of latent space.
+
 <img src="docs/img/overview.png" alt="overview" width="100%" height="100%"/>
 
 ## Temporal Attention Bottleneck Cell
@@ -30,6 +32,11 @@ is constructed on end-uses from **UK DALE**[3], **REDD**[4] and **REFIT**[5].
 It should be noted that the data have to be downloaded manually.
 In order to load the data, the files _path_manager.py_ and _datasource.py_ inside _datasources/_ directory should be 
 modified accordingly.
+
+## Resultats
+
+<img src="docs/img/results_7device.png" alt="results_7device" width="100%" height="100%"/>
+
 
 ## References
 1. Symeonidis, N.; Nalmpantis, C.; Vrakas, D. A Benchmark Framework to Evaluate Energy Disaggregation Solutions. International 541
