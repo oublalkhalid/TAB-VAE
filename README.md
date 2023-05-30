@@ -8,8 +8,9 @@ The use of generative models in energy disaggregation has attracted attention to
 
 ## Temporal Attention Bottleneck Cell
 
-<img src="docs/img/Temporal_attention_cell.gif" alt="drawing" width="50%" height="50%"/>
-
+<p align="center">
+<img src="docs/img/Temporal_attention_cell.gif" alt="drawing" width="30%" height="20%"/>
+</p>
 
 ## Run Experiment
 
