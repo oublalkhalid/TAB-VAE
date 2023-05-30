@@ -39,14 +39,17 @@ modified accordingly.
 
 
 ## References
-1. Symeonidis, N.; Nalmpantis, C.; Vrakas, D. A Benchmark Framework to Evaluate Energy Disaggregation Solutions. International 541
+1. Batra, N.; Kelly, J.; Parson, O.; Dutta, H.; Knottenbelt, W.; Rogers, A.; Singh, A.; Srivastava, M. NILMTK: an open source toolkit 525 for non-intrusive load monitoring. Proceedings of the 5th international conference on Future energy systems, 2014, pp. 265–276.
+
+2. Symeonidis, N.; Nalmpantis, C.; Vrakas, D. A Benchmark Framework to Evaluate Energy Disaggregation Solutions. International 541
 Conference on Engineering Applications of Neural Networks. Springer, 2019, pp. 19–30.
-2. Batra, N.; Kelly, J.; Parson, O.; Dutta, H.; Knottenbelt, W.; Rogers, A.; Singh, A.; Srivastava, M. NILMTK: an open source toolkit 525
-for non-intrusive load monitoring. Proceedings of the 5th international conference on Future energy systems, 2014, pp. 265–276.
+
 3. Jack, K.; William, K. The UK-DALE dataset domestic appliance-level electricity demand and whole-house demand from five UK
 homes. Sci. Data 2015, 2, 150007.
+
 4. Kolter, J.Z.; Johnson, M.J. REDD: A public data set for energy disaggregation research. Workshop on data mining applications in
 sustainability (SIGKDD), San Diego, CA, 2011, Vol. 25, pp. 59–62.
+
 5. Firth, S.; Kane, T.; Dimitriou, V.; Hassan, T.; Fouchal, F.; Coleman, M.; Webb, L. REFIT Smart Home dataset, 2017.
 doi:10.17028/rd.lboro.2070091.v1.
 
