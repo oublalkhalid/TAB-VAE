@@ -12,7 +12,7 @@ from utils.tools import EarlyStopping, adjust_learning_rate
 from utils.metric import metric
 from utils.metric import RMSE
 from model.resnet import Res12_Quadratic
-from model.diffusion_process import GaussianDiffusion
+from model.disaggregation import GaussianDiffusion
 
 from model.encoder import Encoder
 from model.embedding import DataEmbedding
