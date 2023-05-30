@@ -31,10 +31,6 @@ It should be noted that the data have to be downloaded manually.
 In order to load the data, the files _path_manager.py_ and _datasource.py_ inside _datasources/_ directory should be 
 modified accordingly.
 
-## Licence
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
 ## References
 1. Symeonidis, N.; Nalmpantis, C.; Vrakas, D. A Benchmark Framework to Evaluate Energy Disaggregation Solutions. International 541
 Conference on Engineering Applications of Neural Networks. Springer, 2019, pp. 19–30.
@@ -46,3 +42,8 @@ homes. Sci. Data 2015, 2, 150007.
 sustainability (SIGKDD), San Diego, CA, 2011, Vol. 25, pp. 59–62.
 5. Firth, S.; Kane, T.; Dimitriou, V.; Hassan, T.; Fouchal, F.; Coleman, M.; Webb, L. REFIT Smart Home dataset, 2017.
 doi:10.17028/rd.lboro.2070091.v1.
+
+## Licence
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
