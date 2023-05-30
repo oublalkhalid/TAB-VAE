@@ -1,7 +1,7 @@
 
 # -*-Encoding: utf-8 -*-
 """
-Under review
+ICML2023: Temporal Attention Bottleneck for VAE is informative?
 """
 import torch
 import torch.nn as nn

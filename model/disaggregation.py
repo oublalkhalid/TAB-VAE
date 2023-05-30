@@ -1,7 +1,7 @@
 # -*-Encoding: utf-8 -*-
 
 """
-Under review
+ICML2023: Temporal Attention Bottleneck for VAE is informative?
 """
 import numpy as np
 import torch
@@ -13,7 +13,7 @@ from .resnet import Res12_Quadratic
 from utils.metric import MSE
 # -*-Encoding: utf-8 -*-
 """
-Under review
+ICML2023: Temporal Attention Bottleneck for VAE is informative?
 """
 import torch
 import torch.nn as nn

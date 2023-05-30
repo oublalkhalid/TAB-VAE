@@ -1,6 +1,6 @@
 # -*-Encoding: utf-8 -*-
 """
-Under review
+ICML2023: Temporal Attention Bottleneck for VAE is informative?
 """
 from data_load.data_loader import Dataset_Custom
 from exp.exp_basic import Exp_Basic

@@ -1,6 +1,6 @@
 # -*-Encoding: utf-8 -*-
 """
-Under review
+ICML2023: Temporal Attention Bottleneck for VAE is informative?
 """
 from torch import nn
 from torch.autograd import grad

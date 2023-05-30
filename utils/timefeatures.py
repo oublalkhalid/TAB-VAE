@@ -1,6 +1,6 @@
 # -*-Encoding: utf-8 -*-
 """
-Under review
+ICML2023: Temporal Attention Bottleneck for VAE is informative?
 """
 from typing import List
 import numpy as np
