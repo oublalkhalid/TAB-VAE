@@ -1,3 +1,5 @@
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+
 # TAB-VAE: Temporal Attention Bottleneck for VAE is informative? 
 
 ICML 2023 Workshop on DeployGenerativeModel: Temporal Attention Bottleneck for VAE is informative? 
@@ -11,6 +13,23 @@ The use of generative models in energy disaggregation has attracted attention to
 <p align="center">
 <img src="docs/img/Temporal_attention_cell.gif" alt="drawing" width="30%" height="20%"/>
 </p>
+
+### Disentangeled Representation
+
+Using a Batch Estimate of \( q(z) \) for Estimating TC, we have also tried using a batch estimate for the density \( q(z) \), thus optimizing this estimate of the Total Correlation (TC) directly instead of having a discriminator and using the density ratio trick. In other words, we tried \( p_{\phi}(z) \approx \hat{p_{\phi}}(z) = \frac{1}{|B|} \sum_{i \in B} p_{\phi}(z|x^{(i)}) \), and using the estimate:
+
+$$ \mathrm{KL}(p_{\phi}(z) || \prod_{j}{p_{\phi}}(z_{j})) = E_{q(z)} \left[ \log \frac{p_{\phi}(z)}{\prod_j p_{\phi}(z_j)} \right]\\ \approx E_{q(z)} \left[ \log \frac{\hat{p}_{\phi}(z)}{\prod_j \hat{p}_{\phi}(z_j)} \right]\\
+\approx E_{q(z)} \left[ \log \frac{D(z)}{1-D(z)} \right] $$
+
+Where $D$ is a discriminant model with learning parameter $\psi$.
+
+### Ordering and Alignment by Masking
+
+Our inspiration is derived from information theory, specifically proposition.\ref{prop:theory_information}, which provides valuable insight. When the information of $\mathbf{X}^{(t)}$ is concealed, it exists within the latent space $z^{(t)}$ as well as in $\mathbf{Y}^{(t)}$. Leveraging this understanding, we have devised a method to instruct our model to utilize this property for the purpose of masking and aligning the latent space with a specific device.
+
+1. Insight from Information Theory:
+
+Assuming $\mathbf{X}^{(t)}$, $z$, and $\mathbf{Y}^{(t)}$ form a Markov chain, $\mathbf{X}^{(t)} \rightarrow z^{(t)} \rightarrow \mathbf{Y}^{(t)}$, where $p(\mathbf{Y}^{(t)}|\mathbf{X}^{(t)}, z^{(t)}) = p(\mathbf{Y}^{(t)}|z^{(t)})$, the data processing inequality ensures that $I(\mathbf{X}^{(t)};z) \geq I(\mathbf{X}^{(t)};\mathbf{Y}^{(t)})$. If $z^{(t)}$ is a deterministic or stochastic function of $\mathbf{X}^{(t)}$, it cannot contain more information about $\mathbf{Y}^{(t)}$ than $\mathbf{X}^{(t)}$ itself.
 
 ## Run Experiment
 
