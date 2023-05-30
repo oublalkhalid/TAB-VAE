@@ -1,10 +1,6 @@
 # -*-Encoding: utf-8 -*-
 """
-Description:
-    The model architecture of the bidirectional vae.
-    Note: Part of the code are borrowed from 'https://github.com/NVlabs/NVAE'
-Authors:
-    Li,Yan (liyan22021121@gmail.com)
+ICML2023: Temporal Attention Bottleneck for VAE is informative?
 """
 import time
 import math
