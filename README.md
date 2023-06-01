@@ -50,9 +50,7 @@ python main.py --root_path /TAB-VAR --data_path /dataset/Uk-dale --input_dim 3 -
 The **NILMTK**[2] toolkit is used for reading the data.
 All the datasets that are compatible with **NILMTK** are supported, but the benchmark
 is constructed on end-uses from **UK DALE**[3], **REDD**[4] and **REFIT**[5]. 
-It should be noted that the data have to be downloaded manually.
-In order to load the data, the files _path_manager.py_ and _datasource.py_ inside _datasources/_ directory should be 
-modified accordingly.
+It should be noted that the data have to be downloaded manually. You can use Xgentime for energy to load data remotely.
 
 ## Resultats
 
