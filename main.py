@@ -97,14 +97,15 @@ for ii in range(0, args.itr):
     # setting record of experiments
     setting = '{}_sl_{}_pl{}_{}_dim{}_scale{}_diffsteps{}'.format(args.data_path, args.sequence_length,
              args.prediction_length, ii, args.dim,  args.scale, args.diff_steps)
-    exp = Exp(args)  # set experiments
-    print('>>>>>>>start training : {}>>>>>>>>>>>>>>>>>>>>>>>>>>'.format(setting))
+    exp = Exp(args) 
     exp.train(setting)
-    print('>>>>>>>start testing : {}>>>>>>>>>>>>>>>>>>>>>>>>>>'.format(setting))
     mae, mse = exp.test(setting)
     all_mae.append(mae)
     all_mse.append(mse)
     torch.cuda.empty_cache()
 
-# The evaluation results
-print(np.mean(np.array(all_mse)), np.std(np.array(all_mse)), np.mean(np.array(all_mae)), np.std(np.array(all_mae)))
+print(np.mean(np.array(all_mse)), 
+      np.std(np.array(all_mse)),
+      np.mean(np.array(all_mae)),
+      np.std(np.array(all_mae))
+      )

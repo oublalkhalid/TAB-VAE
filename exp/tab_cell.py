@@ -166,14 +166,14 @@ class Decoder(nn.Module):
         return self.fc(lstm_out.squeeze(0))
 
 
-class AttnDecoder(nn.Module):
+class TAB_BottoomDow(nn.Module):
     def __init__(self, seq_len, encoder_hidden_size, decoder_hidden_size, out_feats):
         """
         Initialize the network.
         Args:
             config:
         """
-        super(AttnDecoder, self).__init__()
+        super(TAB_BottoomDow, self).__init__()
         self.seq_len = seq_len
         self.encoder_hidden_size = encoder_hidden_size
         self.decoder_hidden_size = decoder_hidden_size
@@ -222,7 +222,7 @@ class AttnDecoder(nn.Module):
         return self.fc_out(torch.cat((h_t[0], context.to(device)), dim=1))  # predicting value at t=self.seq_length+1
 
 
-class AEattention(nn.Module):
+class TAB_UpDow(nn.Module):
     def __init__(self, seq_len, 
                  encoder_hidden_size, 
                  decoder_hidden_size, 
@@ -237,14 +237,14 @@ class AEattention(nn.Module):
             config:
             input_size: (int): size of the input
         """
-        super(AEattention, self).__init__()
+        super(TAB_UpDow, self).__init__()
         self.encoder = AttnEncoder(input_size,
                                 hidden_size,
                                 seq_len,
                                 add_noise,
                                 directions).to(device)
         
-        self.decoder = AttnDecoder(seq_len, encoder_hidden_size,
+        self.decoder = TAB_BottoomDow(seq_len, encoder_hidden_size,
                                    decoder_hidden_size, out_feats).to(device)
 
     def forward(self, encoder_input: torch.Tensor, return_attention: bool = False):

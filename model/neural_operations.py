@@ -128,8 +128,7 @@ class SyncBatchNorm(nn.Module):
 
     def forward(self, x):
         return self.bn(x)
-
-
+    
 # quick switch between multi-gpu, single-gpu batch norm
 def get_batchnorm(*args, **kwargs):
     return nn.BatchNorm2d(*args, **kwargs)
