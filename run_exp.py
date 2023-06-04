@@ -2,17 +2,15 @@ import argparse
 import torch
 import numpy as np
 import random
+random.seed(12345)
+torch.manual_seed(12345)
+np.random.seed(12345)
 from exp.exp_model import Exp_Model
 
-fix_seed = 100
-random.seed(fix_seed)
-torch.manual_seed(fix_seed)
-np.random.seed(fix_seed)
-
-parser = argparse.ArgumentParser(description='generating')
+parser = argparse.ArgumentParser(description='desaggregation_models')
 
 parser.add_argument('--root_path', type=str, default='./data/', help='root path of the data file')
-parser.add_argument('--data_path', type=str, default='elec2.csv', help='data file')  # change if accordingly
+parser.add_argument('--data_path', type=str, default='uk_dale.csv', help='data file')  # change if accordingly
 parser.add_argument('--target', type=str, default='target', help='target variable in S or MS task')
 parser.add_argument('--features', type=str, default='MS', help='forecasting task, options:[M, S, MS]; '
                                                                'M: multivariate predict multivariate, '
@@ -77,7 +75,7 @@ parser.add_argument('--use_multi_gpu', action='store_true', help='use multiple g
 parser.add_argument('--devices', type=str, default='0',help='device ids of multiple gpus')
 
 args = parser.parse_args()
-args.use_gpu = True #if torch.cuda.is_available() and args.use_gpu else False
+args.use_gpu = True
 
 if args.use_gpu and args.use_multi_gpu:
     args.devices = args.devices.replace(' ', '')

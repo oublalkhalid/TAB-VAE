@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ```
 
 ```python
-python main.py --root_path /TAB-VAR --data_path /dataset/Uk-dale --input_dim 3 --beta_end 0.1
+python run_exp.py --root_path /TAB-VAR --data_path /dataset/Uk-dale --input_dim 3 --beta_end 0.1
 ```
 
 ## Datasets
