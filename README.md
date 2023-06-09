@@ -14,10 +14,6 @@ The use of generative models in energy disaggregation has attracted attention to
 <img src="docs/img/Temporal_attention_cell.gif" alt="drawing" width="30%" height="20%"/>
 </p>
 
-```python
- def attention_bott_layer(in_feature, out_feature, )
-```
-
 ### Disentangeled Representation
 
 Using a Batch Estimate of $q(z)$ for Estimating TC, we have also tried using a batch estimate for the density $q(z)$, thus optimizing this estimate of the Total Correlation (TC) directly instead of having a discriminator and using the density ratio trick. In other words, we tried $p_{\phi}(z) \approx \hat{p_{\phi}}(z) = \frac{1}{|B|} \sum_{i \in B} p_{\phi}(z|x^{(i)})$, and using the estimate:
