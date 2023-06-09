@@ -21,7 +21,7 @@ Using a Batch Estimate of $q(z)$ for Estimating TC, we have also tried using a b
 ```math
 \mathrm{KL}(p_{\phi}(z) || \prod_{j}{p_{\phi}}(z_{j})) = E_{q(z)} \left[ \log \frac{p_{\phi}(z)}{\prod_j p_{\phi}(z_j)} \right]\ \\ \approx E_{q(z)} \left[ \log \frac{\hat{p}_{\phi}(z)}{\prod_j \hat{p}_{\phi}(z_j)} \right]\ \\ \approx E_{q(z)} \left[ \log \frac{D(z)}{1-D(z)} \right]
 ```
-where $D$ is a discriminant model with learning parameter $\psi$ (Optimised using $\mathcal{L}\_{\text{cross\_entropy}}$).
+where $D$ is a discriminant model with learning parameter $\psi$ (Optimised using $\mathcal{L}_{\text{CrossEntropy}}$).
 
 ### Ordering and Alignment by Masking
 
