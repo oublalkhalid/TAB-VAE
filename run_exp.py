@@ -4,9 +4,8 @@ import numpy as np
 import random
 random.seed(12345)
 torch.manual_seed(12345)
-np.random.seed(12345)
+np.random.seed(123456)
 from exp.exp_model import Exp_Model
-
 parser = argparse.ArgumentParser(description='desaggregation_models')
 
 parser.add_argument('--root_path', type=str, default='./data/', help='root path of the data file')
@@ -67,7 +66,7 @@ parser.add_argument('--batch_size', type=int, default=256, help='batch size of t
 parser.add_argument('--learning_rate', type=float, default=0.00005, help='optimizer learning rate')
 parser.add_argument('--weight_decay', type=float, default=0.0200, help='weight decay')
 parser.add_argument('--loss_type', type=str, default='kl',help='loss function')
-
+parser.add_argument('--loss_hyperprams', type=str, default='MMD',help='loss function MMD')
 # device
 parser.add_argument('--use_gpu', type=bool, default=False, help='use gpu')
 parser.add_argument('--gpu', type=int, default=0, help='gpu')
