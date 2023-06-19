@@ -44,7 +44,7 @@ The use of generative models in energy disaggregation has attracted attention to
 |              | S2S     | 87.09  | 86.16     | 83.78  |
 |              | S2P     | 86.96  | 85.57     | 84.14  |
 |              | NVAE    | 93.23  | 91.54     | 91.30  |
-|              | TAB-VAE | 94.25  | 93.07     | 94.04  |
+|   <span style="background-color: yellow;">          | TAB-VAE | 94.25  | 93.07     | 94.04  |
 
 
 ### Disentangeled Representation
