@@ -11,6 +11,7 @@ The use of generative models in energy disaggregation has attracted attention to
 <img src="docs/img/overview.png" alt="overview" width="100%" height="100%"/>
 
 - F1 score
+
 | Dataset Test | Method  | Fridge | Washing.M | Oven   |
 |--------------|---------|--------|-----------|--------|
 | UK-DALE      | DAE     | 80.57  | 81.37     | 81.80  |
