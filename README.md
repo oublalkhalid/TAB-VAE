@@ -1,8 +1,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-*Note
+> **Note**
+> We've updated the code to make it more user-friendly
 
-We've updated the code to make it more user-friendly
-*
 # TAB-VAE: Temporal Attention Bottleneck for VAE is informative? 
 ICML 2023 Workshop on DeployGenerativeModel: Temporal Attention Bottleneck for VAE is informative? 
 
