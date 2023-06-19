@@ -6,7 +6,6 @@ ICML2023: Temporal Attention Bottleneck for VAE is informative?
 from data_load.data_loader import Dataset_Custom
 from exp.exp_basic import Exp_Basic
 from model.model import diffusion_generate, denoise_net, pred_net, Discriminator
-
 from gluonts.torch.util import copy_parameters
 from utils.tools import EarlyStopping, adjust_learning_rate
 from utils.metric import metric
@@ -17,14 +16,9 @@ import torch.nn as nn
 from torch import optim
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
-
 import os
 import time
 import warnings
-
-warnings.filterwarnings('ignore')
-# os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-
 
 class Exp_Model(Exp_Basic):
     def __init__(self, args):
@@ -212,14 +206,13 @@ class Exp_Model(Exp_Basic):
         '''
         plt.figure(1)
         x = np.arange(0, len(train_tc), 1)
-        #plt.title("", size = 20)
         plt.plot(x, train_tc, label='Train')
         plt.plot(x, val_tc, label='Valid')
         plt.plot(x, test_tc, label='Test')
         plt.xlabel("Train step")
         plt.ylabel("Total Correlation")
         plt.legend(loc = "lower right") # 设置信息框
-        plt.grid(True) # 显示网格线
+        plt.grid(True)
         #plt.plot(x, val)
         plt.savefig('fig_5/tc_12.png')
         plt.figure(2)
@@ -230,8 +223,8 @@ class Exp_Model(Exp_Basic):
         plt.plot(x, val_disc, label='Valid')
         plt.xlabel("Train step")
         plt.ylabel("Loss of the discriminator")
-        plt.legend(loc = "lower right") # 设置信息框
-        plt.grid(True) # 显示网格线
+        plt.legend(loc = "lower right") 
+        plt.grid(True)
         #plt.plot(x, val)
         plt.savefig('fig_5/disc_12.png')
         plt.show()
