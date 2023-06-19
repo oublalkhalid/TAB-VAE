@@ -10,6 +10,27 @@ The use of generative models in energy disaggregation has attracted attention to
 
 <img src="docs/img/overview.png" alt="overview" width="100%" height="100%"/>
 
+## Temporal Attention Bottleneck Cell
+
+<p align="center">
+<img src="docs/img/Temporal_attention_cell.gif" alt="drawing" width="30%" height="20%"/>
+</p>
+
+- MSE score
+
+| Dataset Test | Method  | Fridge | Washing.M | Oven   |
+|--------------|---------|--------|-----------|--------|
+| UK-DALE      | DAE     | 80.57  | 81.37     | 81.80  |
+|              | S2S     | 83.99  | 86.08     | 83.61  |
+|              | S2P     | 83.73  | 86.12     | 83.63  |
+|              | NVAE    | 90.10  | 87.32     | 81.13  |
+|              | TAB-VAE | 91.81  | 93.26     | 93.77  |
+| REDD         | DAE     | 82.99  | 81.94     | 81.90  |
+|              | S2S     | 87.09  | 86.16     | 83.78  |
+|              | S2P     | 86.96  | 85.57     | 84.14  |
+|              | NVAE    | 93.23  | 91.54     | 91.30  |
+|              | TAB-VAE | 94.25  | 93.07     | 94.04  |
+
 - F1 score
 
 | Dataset Test | Method  | Fridge | Washing.M | Oven   |
@@ -25,13 +46,6 @@ The use of generative models in energy disaggregation has attracted attention to
 |              | NVAE    | 93.23  | 91.54     | 91.30  |
 |              | TAB-VAE | 94.25  | 93.07     | 94.04  |
 
-
-
-## Temporal Attention Bottleneck Cell
-
-<p align="center">
-<img src="docs/img/Temporal_attention_cell.gif" alt="drawing" width="30%" height="20%"/>
-</p>
 
 ### Disentangeled Representation
 
